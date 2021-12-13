@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  margin: 20px 20px;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 100px);
+  grid-template-rows: repeat(8, 100px);
+}
+
+.box {
+  background-color: blue;
+}
+
+.box:nth-child(16n + 16),
+.box:nth-child(16n + 14),
+.box:nth-child(16n + 12),
+.box:nth-child(16n + 10),
+.box:nth-child(16n + 7),
+.box:nth-child(16n + 5),
+.box:nth-child(16n + 3),
+.box:nth-child(16n + 1) {
+  background-color: red;
+}
